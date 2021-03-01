@@ -1,4 +1,4 @@
-![OH MY FOOD] (assets/maquettes/Ohmyfood/images/logo/ohmyfood@2x.svg)
+![OH MY FOOD] (/assets/maquettes/Ohmyfood/images/logo/ohmyfood@2x.svg)
 # Identité graphique
 ## *Police*
 
@@ -7,7 +7,7 @@ Logo et titre: **Shrikhand**
 Texte: **Roboto**
 
 ## *Couleurs*
-![Couleurs] (assets/maquettes/Ohmyfood/images/maquettes/Couleur-Maquette.png)
+![Couleurs] (/assets/maquettes/Ohmyfood/images/maquettes/Couleur-Maquette.png)
 
 *Primaire:* [color=#9356DC]**#9356DC**[/color]
 
