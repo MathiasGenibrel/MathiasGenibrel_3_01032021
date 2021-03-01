@@ -1,0 +1,20 @@
+{
+  "name": "mathiasgenibrel_3_01032021",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:assets/css/style.css",
+    "sass-compressed": "sass --watch ./assets/sass/main.scss:assets/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithivi/MathiasGenibrel_3_01032021.git"
+  },
+  "author": "Mathias.G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mithivi/MathiasGenibrel_3_01032021/issues"
+  },
+  "homepage": "https://github.com/mithivi/MathiasGenibrel_3_01032021#readme"
+}
