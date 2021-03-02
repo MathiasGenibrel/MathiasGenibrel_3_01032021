@@ -15,6 +15,11 @@
     font-size: $size-text;
     margin: $size-text 0 $size-text 0;
 };
+%font-size-ingredient {
+    font-size: $size-ingredient;
+    margin: $size-ingredient 0 $size-ingredient 0;
+    color: darken($color-background, 55%);
+}
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -55,6 +60,22 @@ body {
 }
 .restaurant-selection__card__name__text__subtitle {
     @extend %font-size-text;
+}
+.menu__nom-restaurant__title {
+    @extend %font-size-logo-title;
+}
+.menu__meal__title {
+    @extend %font-size-text;
+}
+.menu__meal__card__title {
+    @extend %font-size-text;
+}
+.menu__meal__card__subtitle {
+    @extend %font-size-ingredient;
+}
+.menu__meal__card__price {
+    @extend %font-size-ingredient;
+    @extend %bold-typography;
 }
 .footer {
     color: white

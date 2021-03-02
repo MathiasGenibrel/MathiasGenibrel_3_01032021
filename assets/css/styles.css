@@ -57,7 +57,7 @@ a {
   color: black;
 }
 
-.restaurant-selection__card__name__text__title, .restaurant-selection__title, .user-explanation__step__text, .user-explanation__title, .header__user-navigation__explorer__btn, .header__user-navigation__explorer__title, .header__user-navigation__location__position {
+.menu__meal__card__price, .restaurant-selection__card__name__text__title, .restaurant-selection__title, .user-explanation__step__text, .user-explanation__title, .header__user-navigation__explorer__btn, .header__user-navigation__explorer__title, .header__user-navigation__location__position {
   font-weight: bold;
 }
 
@@ -66,15 +66,21 @@ a {
   margin: 1.4rem 0 1.4rem 0;
 }
 
-.footer__logo, .header__user-navigation__explorer__title, .header__logo__icon {
+.footer__logo, .menu__nom-restaurant__title, .header__user-navigation__explorer__title, .header__logo__icon {
   font-size: 1.5rem;
   margin: 1.5rem 0 1.5rem 0;
   font-family: "Shrikhand", sans-serif;
 }
 
-.footer__text, .footer__group__text, .restaurant-selection__card__name__text__subtitle, .restaurant-selection__card__name__text__title, .header__user-navigation__explorer__subtitle, .header__user-navigation__location__position {
+.footer__text, .footer__group__text, .menu__meal__card__title, .menu__meal__title, .restaurant-selection__card__name__text__subtitle, .restaurant-selection__card__name__text__title, .header__user-navigation__explorer__subtitle, .header__user-navigation__location__position {
   font-size: 1rem;
   margin: 1rem 0 1rem 0;
+}
+
+.menu__meal__card__price, .menu__meal__card__subtitle {
+  font-size: 0.8rem;
+  margin: 0.8rem 0 0.8rem 0;
+  color: #6a6a6a;
 }
 
 body {
@@ -105,8 +111,21 @@ body {
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.45);
   position: relative;
 }
+.header__logo--restaurant {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .header__logo__icon {
   padding: calc(1.5rem / 2) 0 calc(1.5rem / 2) 0;
+}
+.header__logo__icon--back {
+  color: #4f4f4f;
+  position: absolute;
+  left: 1rem;
 }
 .header__user-navigation {
   background-color: #f6f6f6;
@@ -248,6 +267,68 @@ body {
 }
 .restaurant-selection__card__name__icon--full {
   display: none;
+}
+
+.restaurant-img {
+  width: 100%;
+  height: calc(1rem * 15);
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+  top: calc(1rem * 3);
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: calc(1rem * 2) calc(1rem * 2) 0 0;
+  padding: 0 1rem 0 1rem;
+}
+.menu__nom-restaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+.menu__meal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu__meal__title {
+  border-bottom: #c3c3c3 solid 0.15rem;
+  box-sizing: content-box;
+  width: calc(1rem * 2.5);
+}
+.menu__meal__card {
+  background-color: white;
+  margin: 0 1rem 1rem 0;
+  border-radius: calc(1rem / 1.5);
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+  line-height: 0;
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 87% 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: left;
+}
+.menu__meal__card__title {
+  margin: calc(1rem * 1.1) 0 0 0;
+  padding-left: calc(1rem * .5);
+  font-weight: 600;
+}
+.menu__meal__card__subtitle {
+  grid-column: 1/1;
+  padding-left: calc(1rem * .5);
+  text-overflow: ellipsis;
+}
+.menu__meal__card__price {
+  text-align: right;
+  padding-right: 1rem;
+}
+.menu__order {
+  width: calc(1rem * 11);
+  margin-top: calc(1rem * 1.2);
 }
 
 .footer {
