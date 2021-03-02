@@ -1,0 +1,70 @@
+@import "../utils/variables.scss";
+%bold-typography {
+    font-weight: bold;
+}
+%font-size-h2 {
+    font-size: $size-h2;
+    margin: $size-h2 0 $size-h2 0;
+}
+%font-size-logo-title {
+    font-size: $size-logo-title;
+    margin: $size-logo-title 0 $size-logo-title 0;
+    font-family: "Shrikhand", sans-serif;
+}
+%font-size-text {
+    font-size: $size-text;
+    margin: $size-text 0 $size-text 0;
+};
+body {
+    font-family: "Roboto", sans-serif;
+}
+.header__logo__icon {
+    @extend %font-size-logo-title;
+    margin: 0;
+}
+.header__user-navigation__location__position {
+    @extend %font-size-text;
+    @extend %bold-typography;
+}
+.header__user-navigation__explorer__title {
+    @extend %font-size-logo-title;
+    @extend %bold-typography;
+    font-family: "Roboto", sans-serif;
+}
+.header__user-navigation__explorer__subtitle {
+    @extend %font-size-text;
+}
+.header__user-navigation__explorer__btn {
+    color: white;
+    @extend %bold-typography;
+}
+.user-explanation__title {
+    @extend %font-size-h2;
+    @extend %bold-typography;
+}
+.user-explanation__step__text {
+    @extend %bold-typography;
+}
+.restaurant-selection__title {
+    @extend %bold-typography;
+    @extend %font-size-h2;
+}
+.restaurant-selection__card__name__text__title {
+    @extend %bold-typography;
+    @extend %font-size-text;
+}
+.restaurant-selection__card__name__text__subtitle {
+    @extend %font-size-text;
+}
+.footer {
+    color: white
+}
+.footer__logo {
+    @extend %font-size-logo-title;
+}
+.footer__group__text {
+    @extend %font-size-text;
+}
+.footer__text {
+    @extend %font-size-text;
+}
