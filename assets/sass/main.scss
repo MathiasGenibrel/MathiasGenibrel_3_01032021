@@ -8,8 +8,21 @@ body {
     &__logo {
         box-shadow: 0 0 .5rem 0 rgba($color: #000000, $alpha: .45);
         position: relative;
+        &--restaurant {
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         &__icon {
             padding: calc(#{$size-logo-title} / 2) 0 calc(#{$size-logo-title} / 2) 0;
+            &--back {
+                color: lighten($color-navigation-location, 10%);
+                position: absolute;
+                left: $size-text;
+            }
         }
     }
     &__user-navigation {
@@ -153,6 +166,67 @@ body {
                 }
             }
         }
+    }
+}
+//Modification content/pages/"restaurant"
+.restaurant-img {
+    width: 100%;
+    height: calc(#{$size-text} * 15);
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    top: calc(#{$size-text} * 3);
+}
+.menu {
+    background-color: $color-background;
+    border-radius: calc(#{$size-text} * 2) calc(#{$size-text} * 2) 0 0;
+    padding: 0 $size-text 0 $size-text;
+    &__nom-restaurant {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: $size-text;
+    }
+    &__meal {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__title {
+            border-bottom: darken($color-background, 20%) solid .15rem;
+            box-sizing: content-box;
+            width: calc(#{$size-text} * 2.5);
+        }
+        &__card {
+            background-color: white;
+            margin: 0 $size-text $size-text 0;
+            border-radius: calc(#{$size-text} / 1.5);
+            box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .15);
+            width: 100%;
+            line-height: 0;
+            display: grid;
+            justify-items: stretch;
+            grid-template-columns: 87% 1fr;
+            grid-template-rows: 1fr 1fr;
+            text-align: left;
+            &__title {
+                margin: calc(#{$size-text} * 1.1) 0 0 0;
+                padding-left: calc(#{$size-text} * .5);
+                font-weight: 600;
+            }
+            &__subtitle {
+                grid-column: 1 / 1;
+                padding-left: calc(#{$size-text} * .5);
+                text-overflow: ellipsis;
+            }
+            &__price {
+                text-align: right;
+                padding-right: $size-text;
+            }
+        }
+    }
+    &__order {
+        width: calc(#{$size-text} * 11);
+        margin-top: calc(#{$size-text} * 1.2);
     }
 }
 .footer {
