@@ -305,10 +305,9 @@ body {
   border-radius: calc(1rem / 1.5);
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.15);
   width: 100%;
-  line-height: 0;
   display: grid;
   justify-items: stretch;
-  grid-template-columns: 87% 1fr;
+  grid-template-columns: 80% 1fr;
   grid-template-rows: 1fr 1fr;
   text-align: left;
 }
@@ -316,14 +315,21 @@ body {
   margin: calc(1rem * 1.1) 0 0 0;
   padding-left: calc(1rem * .5);
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__meal__card__subtitle {
   grid-column: 1/1;
   padding-left: calc(1rem * .5);
+  margin-top: calc(1rem * .4);
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__meal__card__price {
   text-align: right;
+  margin-top: calc(1rem * .4);
   padding-right: 1rem;
 }
 .menu__order {

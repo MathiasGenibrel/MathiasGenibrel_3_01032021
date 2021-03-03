@@ -1,0 +1,5 @@
+@mixin text-overflow-restaurant {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
