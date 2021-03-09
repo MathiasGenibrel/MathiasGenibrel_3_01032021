@@ -1,11 +1,3 @@
-@import "./base/reset.scss";
-@import "./base/typography.scss";
-@import "./utils/mixins.scss";
-@import "./base/header.scss";
-@import "./components/loading-spinner.scss";
-@import "./components/text-loading-spinner.scss";
-@import "./pages/animation-menu.scss";
-@import "./pages/menu.scss";
 .user-explanation {
     display: flex;
     flex-direction: column;
@@ -131,42 +123,5 @@
                 }
             }
         }
-    }
-}
-//Modification content/pages/"restaurant"
-.restaurant-img {
-    width: 100%;
-    height: calc(#{$size-text} * 15);
-    object-fit: cover;
-    position: relative;
-    z-index: -1;
-    top: calc(#{$size-text} * 3);
-}
-.footer {
-    background-color: darken($color-background, 75%);
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: $size-text;
-    line-height: 0;
-    &__logo {
-        font-size: calc(#{$size-logo-title} * .9);
-        margin: calc(#{$size-logo-title} * 1.6) 0 calc(#{$size-logo-title} * 1.3) 0;
-    }
-    &__group {
-        display: flex;
-        align-items: center;
-        color: $color-text-footer;
-        &__icon {
-            margin-right: $size-text;
-        }
-    }
-    &__text {
-        color: $color-text-footer;
-    }
-    &__text:last-child {
-        margin-bottom: calc(#{$size-text} * 3);
     }
 }
