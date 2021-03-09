@@ -8,3 +8,6 @@ $color-primary: #9356DC;
 $color-second: #FF79DA;
 $color-third: #99E2D0;
 $color-background: #f6f6f6;
+$gradient: linear-gradient($color-second, $color-primary);
+$animation-delay: .3;
+$j: 0;

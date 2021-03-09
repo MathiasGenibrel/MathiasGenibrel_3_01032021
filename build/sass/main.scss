@@ -1,10 +1,9 @@
 @import "./base/reset.scss";
 @import "./base/typography.scss";
 @import "./utils/mixins.scss";
-
-body {
-    text-align: center;
-}
+@import "./components/loading-spinner.scss";
+@import "./components/text-loading-spinner.scss";
+@import "./pages/animation-menu.scss";
 .header {
     &__logo {
         box-shadow: 0 0 .5rem 0 rgba($color: #000000, $alpha: .45);
@@ -16,6 +15,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 999;
         }
         &__icon {
             padding: calc(#{$size-logo-title} / 2) 0 calc(#{$size-logo-title} / 2) 0;
@@ -57,6 +57,13 @@ body {
                 background: linear-gradient($color-second, $color-primary);
                 box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .35);
                 margin: calc(#{$size-text} / 2) 0 calc(#{$size-text} * 3) 0;
+                transition: .2s all;
+                outline: none;
+                &:hover{
+                    background: linear-gradient(lighten($color-second, 2%), lighten($color-primary, 2%));
+                    box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .55);
+                    transition: .2s all;
+                }
             }
         }
     }
@@ -118,8 +125,20 @@ body {
         box-sizing: border-box;
         border-radius: $size-text;
         overflow: hidden;
+        position: relative;
         &:last-child {
             margin-bottom: calc(#{$size-text} * 4);
+        }
+        &__new {
+            position: absolute;
+            top: calc(#{$size-text} * 1.5);
+            right: calc(#{$size-text} * 1.25);
+            margin: 0;
+            padding: calc(#{$size-text} * .5) calc(#{$size-text} * .75) calc(#{$size-text} * .5) calc(#{$size-text} * .75);
+            border-radius: .1rem;
+            box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .35);
+            background-color: $color-third;
+            color: darken($color: $color-third, $amount: 50%);
         }
         &__img {
             width: 100%;
@@ -133,7 +152,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 0 1rem 0 1rem;
+            margin: 0 calc(#{$size-text} * 2) 0 $size-text;
             height: calc(#{$size-text} * 4 );
             &__text {
                 display: flex;
@@ -154,16 +173,23 @@ body {
                 position: relative;
                 z-index: 90;
                 transition: .2s;
+                height: 1rem;
+                z-index: 90;
+                &:hover {
+                    color: transparent;
+                    transition: .5s;
+                }
                 &:hover + .restaurant-selection__card__name__icon--full {
-                    display: inline;
-                    position: absolute;
-                    right: calc(#{$size-text} * 2);
+                    height: 1rem;
                     color: $color-primary;
-                    z-index: 90;
                     transition: .2s;
                 }
                 &--full {
-                    display: none;
+                    height: 0;
+                    right: calc(#{$size-text} * 2);
+                    position: absolute;
+                    z-index: 1;
+                    overflow: hidden;
                 }
             }
         }
@@ -182,6 +208,7 @@ body {
     background-color: $color-background;
     border-radius: calc(#{$size-text} * 2) calc(#{$size-text} * 2) 0 0;
     padding: 0 $size-text 0 $size-text;
+    overflow: hidden;
     &__nom-restaurant {
         display: flex;
         justify-content: space-between;
@@ -192,6 +219,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        z-index: 0;
+        opacity: 0;
         &__title {
             border-bottom: darken($color-background, 20%) solid .15rem;
             box-sizing: content-box;
@@ -204,6 +233,7 @@ body {
             box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .15);
             border-radius: calc(#{$size-text} / 1.5);
             overflow: hidden;
+            opacity: 0;
             &__checkbox {
                 position: absolute;
                 opacity: 0;
