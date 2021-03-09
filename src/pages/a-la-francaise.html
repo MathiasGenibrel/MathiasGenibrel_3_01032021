@@ -3,7 +3,7 @@
     <title>Oh My Food</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../build/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -12,12 +12,12 @@
 <body>
     <header class="header">
         <div class="header__logo--restaurant">
-            <a class="header__logo__icon--back" href="../../../index.html"><i class="fas fa-arrow-left"></i></a>
+            <a class="header__logo__icon--back" href="../index.html"><i class="fas fa-arrow-left"></i></a>
             <h1 class="header__logo__icon">ohmyfood</h1>
         </div>
     </header>
     <main>
-        <img class="restaurant-img" src="../../Maquettes/Ohmyfood/images/restaurants/a-la-francaise.jpg" alt="">
+        <img class="restaurant-img" src="../../../assets/Ohmyfood/images/restaurants/a-la-francaise.jpg" alt="">
         <section class="menu">
             <div class="menu__nom-restaurant">
                 <h2 class="menu__nom-restaurant__title">À la française</h2>
@@ -29,9 +29,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="1" type="checkbox">
                     <label class="menu__meal__card__box" for="1">
-                        <h4 class="menu__meal__card__box__title">Tartare de poulpe acidulé</h4>
-                        <p class="menu__meal__card__box__subtitle">Aux zestes d'orange</p>
-                        <p class="menu__meal__card__box__price">25€</p>
+                        <span class="menu__meal__card__box__title">Tartare de poulpe acidulé</span>
+                        <span class="menu__meal__card__box__subtitle">Aux zestes d'orange</span>
+                        <span class="menu__meal__card__box__price">25€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="1">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -40,9 +40,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="2" type="checkbox">
                     <label class="menu__meal__card__box" for="2">
-                        <h4 class="menu__meal__card__box__title">Velouté de légumes d'antan</h4>
-                        <p class="menu__meal__card__box__subtitle">Carotte, panais, topinambour</p>
-                        <p class="menu__meal__card__box__price">35€</p>
+                        <span class="menu__meal__card__box__title">Velouté de légumes d'antan</span>
+                        <span class="menu__meal__card__box__subtitle">Carotte, panais, topinambour</span>
+                        <span class="menu__meal__card__box__price">35€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="2">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -51,9 +51,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="3" type="checkbox">
                     <label class="menu__meal__card__box" for="3">
-                        <h4 class="menu__meal__card__box__title">Soupe à l'oignon</h4>
-                        <p class="menu__meal__card__box__subtitle">Revisitée</p>
-                        <p class="menu__meal__card__box__price">20€</p>
+                        <span class="menu__meal__card__box__title">Soupe à l'oignon</span>
+                        <span class="menu__meal__card__box__subtitle">Revisitée</span>
+                        <span class="menu__meal__card__box__price">20€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="3">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -65,9 +65,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="4" type="checkbox">
                     <label class="menu__meal__card__box" for="4">
-                        <h4 class="menu__meal__card__box__title">Coquilles Saint-Jacques</h4>
-                        <p class="menu__meal__card__box__subtitle">Accompagnées d'une purée de panais</p>
-                        <p class="menu__meal__card__box__price">40€</p>
+                        <span class="menu__meal__card__box__title">Coquilles Saint-Jacques</span>
+                        <span class="menu__meal__card__box__subtitle">Accompagnées d'une purée de panais</span>
+                        <span class="menu__meal__card__box__price">40€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="4">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -76,9 +76,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="5" type="checkbox">
                     <label class="menu__meal__card__box" for="5">
-                        <h4 class="menu__meal__card__box__title">Magret de canard</h4>
-                        <p class="menu__meal__card__box__subtitle">Et parmentier de pommes de terre</p>
-                        <p class="menu__meal__card__box__price">35€</p>
+                        <span class="menu__meal__card__box__title">Magret de canard</span>
+                        <span class="menu__meal__card__box__subtitle">Et parmentier de pommes de terre</span>
+                        <span class="menu__meal__card__box__price">35€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="5">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -87,9 +87,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="6" type="checkbox">
                     <label class="menu__meal__card__box" for="6">
-                        <h4 class="menu__meal__card__box__title">Pigeonneau d’Ille-et-Vilaine</h4>
-                        <p class="menu__meal__card__box__subtitle">Sur son lit de gnocchis aux légumes</p>
-                        <p class="menu__meal__card__box__price">44€</p>
+                        <span class="menu__meal__card__box__title">Pigeonneau d’Ille-et-Vilaine</span>
+                        <span class="menu__meal__card__box__subtitle">Sur son lit de gnocchis aux légumes</span>
+                        <span class="menu__meal__card__box__price">44€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="6">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -101,9 +101,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="7" type="checkbox">
                     <label class="menu__meal__card__box" for="7">
-                        <h4 class="menu__meal__card__box__title">Pétales de violettes glacés</h4>
-                        <p class="menu__meal__card__box__subtitle">Et purée de noisettes</p>
-                        <p class="menu__meal__card__box__price">18€</p>
+                        <span class="menu__meal__card__box__title">Pétales de violettes glacés</span>
+                        <span class="menu__meal__card__box__subtitle">Et purée de noisettes</span>
+                        <span class="menu__meal__card__box__price">18€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="7">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -112,9 +112,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="8" type="checkbox">
                     <label class="menu__meal__card__box" for="8">
-                        <h4 class="menu__meal__card__box__title">Fondant au chocolat</h4>
-                        <p class="menu__meal__card__box__subtitle">Revisité</p>
-                        <p class="menu__meal__card__box__price">22€</p>
+                        <span class="menu__meal__card__box__title">Fondant au chocolat</span>
+                        <span class="menu__meal__card__box__subtitle">Revisité</span>
+                        <span class="menu__meal__card__box__price">22€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="8">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>
@@ -123,9 +123,9 @@
                 <div class="menu__meal__card">
                     <input class="menu__meal__card__checkbox" id="9" type="checkbox">
                     <label class="menu__meal__card__box" for="9">
-                        <h4 class="menu__meal__card__box__title">Millefeuille croustillant</h4>
-                        <p class="menu__meal__card__box__subtitle">Myrtilles et pâte d’amande</p>
-                        <p class="menu__meal__card__box__price">23€</p>
+                        <span class="menu__meal__card__box__title">Millefeuille croustillant</span>
+                        <span class="menu__meal__card__box__subtitle">Myrtilles et pâte d’amande</span>
+                        <span class="menu__meal__card__box__price">23€</span>
                     </label>
                     <label class="menu__meal__card__box menu__meal__card__box--choice" for="9">
                         <i class="menu__meal__card__box__icon fas fa-check-circle" data-fa-transform="grow-6"></i>

@@ -1,0 +1,26 @@
+@for $i from 2 through 4 {
+    .menu__meal:nth-child(#{$i}) {
+        animation: menu-appears calc(#{$animation-delay}s * 1) forwards;
+        animation-delay: calc(#{$animation-delay}s + #{$i}s / 10);
+        @for $j from 1 through 5 {
+            .menu__meal__card:nth-child(#{$j}) {
+                animation: menu-appears calc(#{$animation-delay}s + #{$i}s + #{$j}s / 10) forwards;
+                animation-delay: calc(#{$animation-delay}s + #{$j}s / 10);
+            }
+        }
+    }
+}
+
+@keyframes menu-appears{
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

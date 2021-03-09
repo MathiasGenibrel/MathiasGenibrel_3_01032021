@@ -54,6 +54,10 @@ body {
     @extend %bold-typography;
     @extend %font-size-h2;
 }
+.restaurant-selection__card__new {
+    @extend %font-size-text;
+    @extend %bold-typography;
+}
 .restaurant-selection__card__name__text__title {
     @extend %bold-typography;
     @extend %font-size-text;
@@ -76,6 +80,9 @@ body {
 .menu__meal__card__box__price {
     @extend %font-size-ingredient;
     @extend %bold-typography;
+}
+.text-animation span {
+    @extend %font-size-logo-title
 }
 .footer {
     color: white
