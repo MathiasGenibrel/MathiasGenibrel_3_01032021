@@ -1,3 +1,11 @@
+.restaurant-img {
+    width: 100%;
+    height: calc(#{$size-text} * 15);
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    top: calc(#{$size-text} * 3);
+}
 .menu {
     background-color: $color-background;
     border-radius: calc(#{$size-text} * 2) calc(#{$size-text} * 2) 0 0;
