@@ -1,0 +1,64 @@
+.header {
+    &__logo {
+        box-shadow: 0 0 .5rem 0 rgba($color: #000000, $alpha: .45);
+        position: relative;
+        &--restaurant {
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+        &__icon {
+            padding: calc(#{$size-logo-title} / 2) 0 calc(#{$size-logo-title} / 2) 0;
+            &--back {
+                color: lighten($color-navigation-location, 10%);
+                position: absolute;
+                left: $size-text;
+            }
+        }
+    }
+    &__user-navigation {
+        background-color: $color-background;
+        &__location {
+            background-color: darken($color-background, 4%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-navigation-location;
+            &__position {
+                margin-left: $size-text;
+            }
+        }
+        &__explorer {
+            &__title {
+                width: calc(#{$size-logo-title} * 10);
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &__subtitle {
+                width: calc(#{$size-logo-title} * 12);
+                margin-left: auto;
+                margin-right: auto;
+                color: lighten($color-navigation-location, 30%);
+            }
+            &__btn {
+                padding: $size-text;
+                border-radius: calc(#{$size-text} * 2);
+                border: transparent;
+                background: linear-gradient($color-second, $color-primary);
+                box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .35);
+                margin: calc(#{$size-text} / 2) 0 calc(#{$size-text} * 3) 0;
+                transition: .2s all;
+                outline: none;
+                &:hover{
+                    background: linear-gradient(lighten($color-second, 2%), lighten($color-primary, 2%));
+                    box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .55);
+                    transition: .2s all;
+                }
+            }
+        }
+    }
+}

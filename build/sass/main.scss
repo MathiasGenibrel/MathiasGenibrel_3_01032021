@@ -1,73 +1,11 @@
 @import "./base/reset.scss";
 @import "./base/typography.scss";
 @import "./utils/mixins.scss";
+@import "./base/header.scss";
 @import "./components/loading-spinner.scss";
 @import "./components/text-loading-spinner.scss";
 @import "./pages/animation-menu.scss";
-.header {
-    &__logo {
-        box-shadow: 0 0 .5rem 0 rgba($color: #000000, $alpha: .45);
-        position: relative;
-        &--restaurant {
-            position: fixed;
-            background-color: white;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 999;
-        }
-        &__icon {
-            padding: calc(#{$size-logo-title} / 2) 0 calc(#{$size-logo-title} / 2) 0;
-            &--back {
-                color: lighten($color-navigation-location, 10%);
-                position: absolute;
-                left: $size-text;
-            }
-        }
-    }
-    &__user-navigation {
-        background-color: $color-background;
-        &__location {
-            background-color: darken($color-background, 4%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $color-navigation-location;
-            &__position {
-                margin-left: $size-text;
-            }
-        }
-        &__explorer {
-            &__title {
-                width: calc(#{$size-logo-title} * 10);
-                margin-left: auto;
-                margin-right: auto;
-            }
-            &__subtitle {
-                width: calc(#{$size-logo-title} * 12);
-                margin-left: auto;
-                margin-right: auto;
-                color: lighten($color-navigation-location, 30%);
-            }
-            &__btn {
-                padding: $size-text;
-                border-radius: calc(#{$size-text} * 2);
-                border: transparent;
-                background: linear-gradient($color-second, $color-primary);
-                box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .35);
-                margin: calc(#{$size-text} / 2) 0 calc(#{$size-text} * 3) 0;
-                transition: .2s all;
-                outline: none;
-                &:hover{
-                    background: linear-gradient(lighten($color-second, 2%), lighten($color-primary, 2%));
-                    box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .55);
-                    transition: .2s all;
-                }
-            }
-        }
-    }
-}
+@import "./pages/menu.scss";
 .user-explanation {
     display: flex;
     flex-direction: column;
@@ -203,101 +141,6 @@
     position: relative;
     z-index: -1;
     top: calc(#{$size-text} * 3);
-}
-.menu {
-    background-color: $color-background;
-    border-radius: calc(#{$size-text} * 2) calc(#{$size-text} * 2) 0 0;
-    padding: 0 $size-text 0 $size-text;
-    overflow: hidden;
-    &__nom-restaurant {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: $size-text;
-    }
-    &__meal {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        z-index: 0;
-        opacity: 0;
-        &__title {
-            border-bottom: darken($color-background, 20%) solid .15rem;
-            box-sizing: content-box;
-            width: calc(#{$size-text} * 2.5);
-        }
-        &__card {
-            width: 100%;
-            display: flex;
-            margin: 0 0 $size-text 0;
-            box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .15);
-            border-radius: calc(#{$size-text} / 1.5);
-            overflow: hidden;
-            opacity: 0;
-            &__checkbox {
-                position: absolute;
-                opacity: 0;
-                width: 0;
-                height: 0;
-                &:checked + .menu__meal__card__box {
-                    width: 80%;
-                    transition: .5s all;
-                }
-                &:checked ~ .menu__meal__card__box--choice {
-                    width: 20%;
-                    transition: .5s all;
-                    & .menu__meal__card__box__icon {
-                        transform: rotate(360deg);
-                        transition: .5s all;
-                    }
-                }
-            }
-            &__box {
-                background-color: white;
-                width: 100%;
-                display: grid;
-                justify-items: stretch;
-                grid-template-columns: 80% 1fr 0;
-                grid-template-rows: 1fr 1fr;
-                text-align: left;
-                transition: .2s all;
-                &--choice {
-                    width: 0;
-                    margin-bottom: $size-text;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: $color-third;
-                    overflow: hidden;
-                    margin: 0;
-                }
-                &__title {
-                    margin: calc(#{$size-text} * 1.1) 0 0 0;
-                    padding-left: calc(#{$size-text} * .5);
-                    font-weight: 600;
-                    @include text-overflow-restaurant();
-                }
-                &__subtitle {
-                    grid-column: 1 / 1;
-                    padding-left: calc(#{$size-text} * .5);
-                    margin-top: calc(#{$size-text} * .4);
-                    @include text-overflow-restaurant();
-                }
-                &__price {
-                    text-align: right;
-                    margin-top: calc(#{$size-text} * .4);
-                    padding-right: $size-text;
-                }
-                &__icon {
-                    color: white;
-                }
-            }
-        }
-        }
-    &__order {
-        width: calc(#{$size-text} * 11);
-        margin-top: calc(#{$size-text} * 1.2);
-    }
 }
 .footer {
     background-color: darken($color-background, 75%);
