@@ -679,4 +679,100 @@ body {
   margin-top: calc(1rem * 1.2);
 }
 
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .user-explanation {
+    align-items: center;
+  }
+  .user-explanation__step {
+    justify-content: center;
+    width: calc(100% - 1rem * 18);
+    min-width: calc(1rem * 22);
+    margin: calc(1rem * 1) auto calc(1rem * 1.5) auto;
+    position: relative;
+  }
+  .user-explanation__step__number {
+    position: absolute;
+    left: calc(-1rem * .75);
+  }
+
+  .restaurant-selection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .restaurant-selection__title {
+    grid-column: 1/span 2;
+  }
+
+  .menu__meal__card {
+    width: calc(100% - 1rem * 5);
+    margin: 0 auto 1rem auto;
+  }
+}
+@media only screen and (min-width: 769px) {
+  header {
+    position: relative;
+    max-width: calc(1rem * 80);
+    margin: 0 auto 0 auto;
+  }
+
+  .header__logo--restaurant {
+    max-width: calc(1rem * 80);
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+
+  main {
+    max-width: calc(1rem * 80);
+    margin: 0 auto 0 auto;
+    box-shadow: 0 0.2rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .user-explanation {
+    align-items: center;
+  }
+  .user-explanation__step {
+    justify-content: center;
+    width: calc(100% - 1rem * 18);
+    margin: calc(1rem * 1) auto calc(1rem * 1.5) auto;
+    position: relative;
+  }
+  .user-explanation__step__number {
+    position: absolute;
+    left: calc(-1rem * .75);
+  }
+
+  .restaurant-selection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .restaurant-selection__title {
+    grid-column: 1/span 2;
+  }
+  .restaurant-selection__card {
+    height: calc(1rem * 25);
+  }
+  .restaurant-selection__card__img {
+    height: calc(1rem * 21);
+  }
+
+  .restaurant-img {
+    height: calc(1rem * 20);
+  }
+
+  .menu {
+    position: relative;
+  }
+  .menu__meal__card {
+    width: calc(100% - 1rem * 5);
+    margin: 0 auto 1rem auto;
+  }
+
+  .footer > * {
+    width: calc(1rem * 80);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
