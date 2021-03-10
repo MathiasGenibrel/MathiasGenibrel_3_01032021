@@ -1,0 +1,33 @@
+@media only screen 
+    and (min-width: 426px)
+    and (max-width: 768px) {
+        .user-explanation {
+            align-items: center;
+            &__step {
+                justify-content: center;
+                width: calc(100% - #{$size-text} * 18);
+                min-width: calc(#{$size-text} * 22);
+                margin: calc(#{$size-text} * 1) auto calc(#{$size-text} * 1.5)  auto;
+                position: relative;
+                &__number {
+                    position: absolute;
+                    left: calc(-#{$size-text} * .75);
+                }
+            }
+        }
+        .restaurant-selection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            &__title {
+                grid-column: 1 / span 2;
+            }
+        }
+        .menu {
+            &__meal {
+                &__card {
+                    width: calc(100% - #{$size-text} * 5);
+                    margin: 0 auto $size-text auto;
+                }
+            }
+        }
+    }
