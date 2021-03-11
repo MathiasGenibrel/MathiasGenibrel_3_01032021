@@ -1,8 +1,9 @@
 @media only screen 
-    and (min-width: 769px) {
+    and (min-width: 769px){
         header {
             position: relative;
             @include desktop-position;
+            @include shadow(.2);
         }
         .header {
             &__logo--restaurant {
@@ -12,7 +13,7 @@
         }
         main {
             @include desktop-position;
-            @include shadow;
+            @include shadow(.2);
         }
         .user-explanation {
             align-items: center;
