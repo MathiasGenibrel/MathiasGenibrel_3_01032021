@@ -1,11 +1,14 @@
 @media only screen 
-    and (min-width: 769px){
+    and (min-width: 1025px){
         header {
             position: relative;
             @include desktop-position;
             @include shadow(.2);
         }
         .header {
+            &__logo {
+                @include shadow(.2);
+            }
             &__logo--restaurant {
                 @include desktop-position;
                 text-align: center
@@ -16,15 +19,34 @@
             @include shadow(.2);
         }
         .user-explanation {
+            padding: calc(#{$size-text} * 2);
             align-items: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: calc(#{$size-text} * 2);
+            align-items: center;
+            &__title {
+                grid-column: 1 / span 3;
+            }
             &__step {
                 justify-content: center;
-                width: calc(100% - #{$size-text} * 18);
+                width: 100%;
+                height: calc(#{$size-text} * 5);
                 margin: calc(#{$size-text} * 1) auto calc(#{$size-text} * 1.5)  auto;
                 position: relative;
                 &__number {
                     position: absolute;
-                    left: calc(-#{$size-text} * .75);
+                    display: flex;
+                    font-size: calc(#{$number-explanation--desktop} * .8);
+                    width: $number-explanation--desktop;
+                    height: $number-explanation--desktop;
+                    justify-content: center;
+                    align-items: center;
+                    top: calc(#{$number-explanation--desktop} / -2);
+                    left: calc(50% - #{$number-explanation--desktop} / 2);
+                }
+                &:nth-child(2) {
+                    margin-top: calc(#{$size-text} * 1);
                 }
             }
         }

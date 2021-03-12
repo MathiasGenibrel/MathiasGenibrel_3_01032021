@@ -170,9 +170,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .user-explanation__title {
   margin-left: 1rem;
 }
+
 .user-explanation__step {
   background-color: #f6f6f6;
   width: calc(100% - 3 * 1rem);
@@ -183,15 +185,19 @@ body {
   display: flex;
   align-items: center;
 }
+
 .user-explanation__step:nth-child(2) {
   margin-top: 0;
 }
+
 .user-explanation__step:nth-child(4) {
   background-color: #f2eafb;
 }
+
 .user-explanation__step:nth-child(4) .user-explanation__step__icon {
   color: #9356DC;
 }
+
 .user-explanation__step__number {
   background-color: #9356DC;
   width: calc(1rem * 1.5);
@@ -202,6 +208,7 @@ body {
   position: relative;
   right: calc(1rem * .8);
 }
+
 .user-explanation__step__icon {
   margin: 0 1rem 0 calc(1rem * .2 );
   color: #828282;
@@ -214,6 +221,7 @@ body {
   margin-left: 1rem;
   box-sizing: border-box;
 }
+
 .restaurant-selection__card {
   width: calc(100% - 1rem);
   height: calc(1rem * 14 );
@@ -225,9 +233,11 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 .restaurant-selection__card:last-child {
   margin-bottom: calc(1rem * 4);
 }
+
 .restaurant-selection__card__new {
   position: absolute;
   top: calc(1rem * 1.5);
@@ -239,14 +249,17 @@ body {
   background-color: #99E2D0;
   color: #1b6150;
 }
+
 .restaurant-selection__card__img {
   width: 100%;
   height: calc(1rem * 10 );
   object-fit: cover;
 }
+
 .restaurant-selection__card__img:nth-child(1) {
   object-position: 50% 61%;
 }
+
 .restaurant-selection__card__name {
   display: flex;
   justify-content: space-between;
@@ -254,6 +267,7 @@ body {
   margin: 0 calc(1rem * 2) 0 1rem;
   height: calc(1rem * 4 );
 }
+
 .restaurant-selection__card__name__text {
   display: flex;
   flex-direction: column;
@@ -261,13 +275,16 @@ body {
   align-items: flex-start;
   height: calc(1rem * 4 );
 }
+
 .restaurant-selection__card__name__text__title {
   margin: 0;
   margin-bottom: calc(1rem * .3);
 }
+
 .restaurant-selection__card__name__text__subtitle {
   margin: 0;
 }
+
 .restaurant-selection__card__name__icon {
   color: #686868;
   position: relative;
@@ -276,15 +293,18 @@ body {
   height: 1rem;
   z-index: 90;
 }
+
 .restaurant-selection__card__name__icon:hover {
   color: transparent;
   transition: 0.5s;
 }
+
 .restaurant-selection__card__name__icon:hover + .restaurant-selection__card__name__icon--full {
   height: 1rem;
   color: #9356DC;
   transition: 0.2s;
 }
+
 .restaurant-selection__card__name__icon--full {
   height: 0;
   right: calc(1rem * 2);
@@ -482,77 +502,77 @@ body {
     text-shadow: 0 1px 0 #99E2D0, 0 2px 0 #99E2D0, 0 3px 0 #99E2D0, 0 4px 0 #99E2D0, 0 5px 0 #99E2D0, 0 6px 0 #99E2D0, 0 7px 0 #99E2D0, 0 8px 0 #99E2D0, 0 9px 0 #99E2D0, 0 50px 25px rgba(0, 0, 0, 0.2);
   }
 }
-.menu__meal:nth-child(2) {
+.menu__selection:nth-child(2) {
   animation: menu-appears calc(0.3s * 1) forwards;
   animation-delay: calc(0.3s + 2s / 10);
 }
-.menu__meal:nth-child(2) .menu__meal__card:nth-child(1) {
+.menu__selection:nth-child(2) .menu__selection__card:nth-child(1) {
   animation: menu-appears calc(0.3s + 2s + 1s / 10) forwards;
   animation-delay: calc(0.3s + 1s / 10);
 }
-.menu__meal:nth-child(2) .menu__meal__card:nth-child(2) {
+.menu__selection:nth-child(2) .menu__selection__card:nth-child(2) {
   animation: menu-appears calc(0.3s + 2s + 2s / 10) forwards;
   animation-delay: calc(0.3s + 2s / 10);
 }
-.menu__meal:nth-child(2) .menu__meal__card:nth-child(3) {
+.menu__selection:nth-child(2) .menu__selection__card:nth-child(3) {
   animation: menu-appears calc(0.3s + 2s + 3s / 10) forwards;
   animation-delay: calc(0.3s + 3s / 10);
 }
-.menu__meal:nth-child(2) .menu__meal__card:nth-child(4) {
+.menu__selection:nth-child(2) .menu__selection__card:nth-child(4) {
   animation: menu-appears calc(0.3s + 2s + 4s / 10) forwards;
   animation-delay: calc(0.3s + 4s / 10);
 }
-.menu__meal:nth-child(2) .menu__meal__card:nth-child(5) {
+.menu__selection:nth-child(2) .menu__selection__card:nth-child(5) {
   animation: menu-appears calc(0.3s + 2s + 5s / 10) forwards;
   animation-delay: calc(0.3s + 5s / 10);
 }
 
-.menu__meal:nth-child(3) {
+.menu__selection:nth-child(3) {
   animation: menu-appears calc(0.3s * 1) forwards;
   animation-delay: calc(0.3s + 3s / 10);
 }
-.menu__meal:nth-child(3) .menu__meal__card:nth-child(1) {
+.menu__selection:nth-child(3) .menu__selection__card:nth-child(1) {
   animation: menu-appears calc(0.3s + 3s + 1s / 10) forwards;
   animation-delay: calc(0.3s + 1s / 10);
 }
-.menu__meal:nth-child(3) .menu__meal__card:nth-child(2) {
+.menu__selection:nth-child(3) .menu__selection__card:nth-child(2) {
   animation: menu-appears calc(0.3s + 3s + 2s / 10) forwards;
   animation-delay: calc(0.3s + 2s / 10);
 }
-.menu__meal:nth-child(3) .menu__meal__card:nth-child(3) {
+.menu__selection:nth-child(3) .menu__selection__card:nth-child(3) {
   animation: menu-appears calc(0.3s + 3s + 3s / 10) forwards;
   animation-delay: calc(0.3s + 3s / 10);
 }
-.menu__meal:nth-child(3) .menu__meal__card:nth-child(4) {
+.menu__selection:nth-child(3) .menu__selection__card:nth-child(4) {
   animation: menu-appears calc(0.3s + 3s + 4s / 10) forwards;
   animation-delay: calc(0.3s + 4s / 10);
 }
-.menu__meal:nth-child(3) .menu__meal__card:nth-child(5) {
+.menu__selection:nth-child(3) .menu__selection__card:nth-child(5) {
   animation: menu-appears calc(0.3s + 3s + 5s / 10) forwards;
   animation-delay: calc(0.3s + 5s / 10);
 }
 
-.menu__meal:nth-child(4) {
+.menu__selection:nth-child(4) {
   animation: menu-appears calc(0.3s * 1) forwards;
   animation-delay: calc(0.3s + 4s / 10);
 }
-.menu__meal:nth-child(4) .menu__meal__card:nth-child(1) {
+.menu__selection:nth-child(4) .menu__selection__card:nth-child(1) {
   animation: menu-appears calc(0.3s + 4s + 1s / 10) forwards;
   animation-delay: calc(0.3s + 1s / 10);
 }
-.menu__meal:nth-child(4) .menu__meal__card:nth-child(2) {
+.menu__selection:nth-child(4) .menu__selection__card:nth-child(2) {
   animation: menu-appears calc(0.3s + 4s + 2s / 10) forwards;
   animation-delay: calc(0.3s + 2s / 10);
 }
-.menu__meal:nth-child(4) .menu__meal__card:nth-child(3) {
+.menu__selection:nth-child(4) .menu__selection__card:nth-child(3) {
   animation: menu-appears calc(0.3s + 4s + 3s / 10) forwards;
   animation-delay: calc(0.3s + 3s / 10);
 }
-.menu__meal:nth-child(4) .menu__meal__card:nth-child(4) {
+.menu__selection:nth-child(4) .menu__selection__card:nth-child(4) {
   animation: menu-appears calc(0.3s + 4s + 4s / 10) forwards;
   animation-delay: calc(0.3s + 4s / 10);
 }
-.menu__meal:nth-child(4) .menu__meal__card:nth-child(5) {
+.menu__selection:nth-child(4) .menu__selection__card:nth-child(5) {
   animation: menu-appears calc(0.3s + 4s + 5s / 10) forwards;
   animation-delay: calc(0.3s + 5s / 10);
 }
@@ -591,19 +611,19 @@ body {
   align-items: center;
   padding-right: 1rem;
 }
-.menu__meal {
+.menu__selection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   z-index: 0;
   opacity: 0;
 }
-.menu__meal__title {
+.menu__selection__title {
   border-bottom: #c3c3c3 solid 0.15rem;
   box-sizing: content-box;
   width: calc(1rem * 2.5);
 }
-.menu__meal__card {
+.menu__selection__card {
   width: 100%;
   display: flex;
   margin: 0 0 1rem 0;
@@ -612,25 +632,25 @@ body {
   overflow: hidden;
   opacity: 0;
 }
-.menu__meal__card__checkbox {
+.menu__selection__card__checkbox {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
-.menu__meal__card__checkbox:checked + .menu__meal__card__box {
+.menu__selection__card__checkbox:checked + .menu__selection__card__box {
   width: 80%;
   transition: 0.5s all;
 }
-.menu__meal__card__checkbox:checked ~ .menu__meal__card__box--choice {
+.menu__selection__card__checkbox:checked ~ .menu__selection__card__box--choice {
   width: 20%;
   transition: 0.5s all;
 }
-.menu__meal__card__checkbox:checked ~ .menu__meal__card__box--choice .menu__meal__card__box__icon {
+.menu__selection__card__checkbox:checked ~ .menu__selection__card__box--choice .menu__selection__card__box__icon {
   transform: rotate(360deg);
   transition: 0.5s all;
 }
-.menu__meal__card__box {
+.menu__selection__card__box {
   background-color: white;
   width: 100%;
   display: grid;
@@ -640,7 +660,7 @@ body {
   text-align: left;
   transition: 0.2s all;
 }
-.menu__meal__card__box--choice {
+.menu__selection__card__box--choice {
   width: 0;
   margin-bottom: 1rem;
   display: flex;
@@ -650,7 +670,7 @@ body {
   overflow: hidden;
   margin: 0;
 }
-.menu__meal__card__box__title {
+.menu__selection__card__box__title {
   margin: calc(1rem * 1.1) 0 0 0;
   padding-left: calc(1rem * .5);
   font-weight: 600;
@@ -658,7 +678,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__meal__card__box__subtitle {
+.menu__selection__card__box__subtitle {
   grid-column: 1/1;
   padding-left: calc(1rem * .5);
   margin-top: calc(1rem * .4);
@@ -666,12 +686,12 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__meal__card__box__price {
+.menu__selection__card__box__price {
   text-align: right;
   margin-top: calc(1rem * .4);
   padding-right: 1rem;
 }
-.menu__meal__card__box__icon {
+.menu__selection__card__box__icon {
   color: white;
 }
 .menu__order {
@@ -679,7 +699,7 @@ body {
   margin-top: calc(1rem * 1.2);
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .user-explanation {
     align-items: center;
   }
@@ -708,7 +728,7 @@ body {
     margin: 0 auto 1rem auto;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   header {
     position: relative;
     max-width: calc(1rem * 80);
@@ -716,6 +736,9 @@ body {
     box-shadow: 0 0.2rem 0.8rem 0 rgba(0, 0, 0, 0.2);
   }
 
+  .header__logo {
+    box-shadow: 0 0.2rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  }
   .header__logo--restaurant {
     max-width: calc(1rem * 80);
     margin: 0 auto 0 auto;
@@ -729,17 +752,36 @@ body {
   }
 
   .user-explanation {
+    padding: calc(1rem * 2);
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: calc(1rem * 2);
+    align-items: center;
+  }
+  .user-explanation__title {
+    grid-column: 1/span 3;
   }
   .user-explanation__step {
     justify-content: center;
-    width: calc(100% - 1rem * 18);
+    width: 100%;
+    height: calc(1rem * 5);
     margin: calc(1rem * 1) auto calc(1rem * 1.5) auto;
     position: relative;
   }
   .user-explanation__step__number {
     position: absolute;
-    left: calc(-1rem * .75);
+    display: flex;
+    font-size: calc(calc(1rem * 2.2) * .8);
+    width: calc(1rem * 2.2);
+    height: calc(1rem * 2.2);
+    justify-content: center;
+    align-items: center;
+    top: calc(calc(1rem * 2.2) / -2);
+    left: calc(50% - calc(1rem * 2.2) / 2);
+  }
+  .user-explanation__step:nth-child(2) {
+    margin-top: calc(1rem * 1);
   }
 
   .restaurant-selection {
