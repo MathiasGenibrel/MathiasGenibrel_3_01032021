@@ -1,45 +1,6 @@
-.user-explanation {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    &__title {
-        //margin: calc(#{$size-logo-title} * 2) 0 calc(#{$size-logo-title} * 2) 0;
-        margin-left: $size-text;
-    }
-    &__step {
-        background-color: #f6f6f6;
-        width: calc(100% - 3 * #{$size-text});
-        margin: calc(#{$size-text} * 1.5) calc(#{$size-text} * 2)  auto;
-        padding: calc(#{$size-text} * 1.5) 0 calc(#{$size-text} * 1.5) 0;
-        border-radius: $size-text;
-        box-shadow: 0 .2rem .80rem 0 rgba($color: #000000, $alpha: .2);
-        display: flex;
-        align-items: center;
-        &:nth-child(2) {
-            margin-top: 0;
-        }
-        &:nth-child(4) {
-            background-color: lighten($color-primary, $amount: 35);
-            .user-explanation__step__icon {
-                color: $color-primary;
-            }
-        }
-        &__number {
-            background-color: $color-primary;
-            width: calc(#{$size-text} * 1.5);
-            height: calc(#{$size-text} * 1.5);
-            line-height: calc(#{$size-text} * 1.5);
-            border-radius: 50%;
-            color: white;
-            position: relative;
-            right: calc(#{$size-text} * .8);
-        }
-        &__icon {
-            margin: 0 $size-text 0 calc(#{$size-text} * .2 );
-            color: lighten($color-navigation-location, 30%);
-        }
-    }
-}
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
 .restaurant-selection {
     display: flex;
     flex-direction: column;
@@ -51,7 +12,7 @@
         height: calc(#{$size-text} * 14 );
         margin-right: $size-text;
         margin-bottom: $size-text;
-        box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .35);
+        @include shadow;
         box-sizing: border-box;
         border-radius: $size-text;
         overflow: hidden;
@@ -66,7 +27,7 @@
             margin: 0;
             padding: calc(#{$size-text} * .5) calc(#{$size-text} * .75) calc(#{$size-text} * .5) calc(#{$size-text} * .75);
             border-radius: .1rem;
-            box-shadow: 0 .2rem .5rem 0 rgba($color: #000000, $alpha: .35);
+            @include shadow;
             background-color: $color-third;
             color: darken($color: $color-third, $amount: 50%);
         }

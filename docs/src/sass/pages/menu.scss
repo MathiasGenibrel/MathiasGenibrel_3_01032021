@@ -17,7 +17,7 @@
         align-items: center;
         padding-right: $size-text;
     }
-    &__meal {
+    &__selection {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -41,14 +41,14 @@
                 opacity: 0;
                 width: 0;
                 height: 0;
-                &:checked + .menu__meal__card__box {
+                &:checked + .menu__selection__card__box {
                     width: 80%;
                     transition: .5s all;
                 }
-                &:checked ~ .menu__meal__card__box--choice {
+                &:checked ~ .menu__selection__card__box--choice {
                     width: 20%;
                     transition: .5s all;
-                    & .menu__meal__card__box__icon {
+                    & .menu__selection__card__box__icon {
                         transform: rotate(360deg);
                         transition: .5s all;
                     }

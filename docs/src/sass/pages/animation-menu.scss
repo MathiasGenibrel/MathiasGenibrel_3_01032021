@@ -1,9 +1,9 @@
 @for $i from 2 through 4 {
-    .menu__meal:nth-child(#{$i}) {
+    .menu__selection:nth-child(#{$i}) {
         animation: menu-appears calc(#{$animation-delay} * 1) forwards;
         animation-delay: calc(#{$animation-delay} + #{$i}s / 10);
         @for $j from 1 through 5 {
-            .menu__meal__card:nth-child(#{$j}) {
+            .menu__selection__card:nth-child(#{$j}) {
                 animation: menu-appears calc(#{$animation-delay} + #{$i}s + #{$j}s / 10) forwards;
                 animation-delay: calc(#{$animation-delay} + #{$j}s / 10);
             }
