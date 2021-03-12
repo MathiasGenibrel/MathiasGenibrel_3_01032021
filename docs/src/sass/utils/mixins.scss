@@ -7,6 +7,6 @@
     max-width: calc(#{$size-text} * 80);
     margin: 0 auto 0 auto;
 }
-@mixin shadow {
-    box-shadow: 0 .2rem .80rem 0 rgba($color: #000000, $alpha: .2);
+@mixin shadow ($alpha-shadow: .35){
+    box-shadow: 0 .2rem .80rem 0 rgba($color: #000000, $alpha: $alpha-shadow);
 }
