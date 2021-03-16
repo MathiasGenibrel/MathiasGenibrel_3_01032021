@@ -3,7 +3,7 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px);
+    background-color: white;
     animation: loading-spinners-box 3s forwards;
     z-index: 999;
     width: 100vw;
