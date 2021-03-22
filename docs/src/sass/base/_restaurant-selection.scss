@@ -64,23 +64,26 @@
                 position: relative;
                 z-index: 90;
                 transition: .2s;
-                height: 1rem;
-                z-index: 90;
+                font-size: calc(#{$size-text} * 1.5);
                 &:hover {
                     color: transparent;
                     transition: .5s;
                 }
                 &:hover + .restaurant-selection__card__name__icon--full {
-                    height: 1rem;
-                    color: $color-primary;
                     transition: .2s;
+                    font-size: calc(#{$size-text} * 1.5);
+                    height: calc(#{$size-text} * 1.5);
                 }
                 &--full {
+                    font-size: 0;
                     height: 0;
                     right: calc(#{$size-text} * 2);
                     position: absolute;
                     z-index: 1;
-                    overflow: hidden;
+                    background: linear-gradient($color-second, $color-primary);
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
                 }
             }
         }

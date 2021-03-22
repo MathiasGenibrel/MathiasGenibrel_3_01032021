@@ -24,8 +24,10 @@
         z-index: 0;
         opacity: 0;
         &__title {
-            border-bottom: darken($color-background, 20%) solid .15rem;
+            border-bottom: $color-third solid .15rem;
             box-sizing: content-box;
+            margin-bottom: $size-text;
+            padding-bottom: calc(#{$size-text} / 4);
             width: calc(#{$size-text} * 2.5);
         }
         &__card {
@@ -92,6 +94,7 @@
                 }
                 &__icon {
                     color: white;
+                    font-size: calc(#{$size-text} * 1.5);
                 }
             }
         }
